@@ -1,5 +1,5 @@
 <script>
-	let name = 'Nested Components, HTML tags, and $:'
+	let name = 'Nested Components and $:'
 	import Nested from "./Nested.svelte";
 	let urlString = "This is a boom example with a <strong>HTML</strong> " +
 			"and a hyperlink redirect to <a href='https://google.ca'>Google</a>";
@@ -8,7 +8,7 @@
 <main>
 	<h1><b>Example for {name}!</b></h1>
 	<p>{@html urlString}</p>
-	<Nested count = {10}/>
+	<Nested count = {3}/>
 </main>
 
 <style>
@@ -24,7 +24,7 @@
 		color: rgb(166,137,124);
 		font-family: "Times New Roman",cursive;
 		text-transform: uppercase;
-		font-size: 3em;
+		font-size: 2em;
 		font-weight: 100;
 	}
 
